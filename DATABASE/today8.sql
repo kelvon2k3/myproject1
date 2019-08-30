@@ -1,0 +1,3 @@
+SELECT*FROM orders
+AS 'NUMBER OF ORDERS'
+GROUP BY employee_id

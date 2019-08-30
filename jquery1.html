@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link href='css/bootstrap.css' rel='stylesheet'>
+	<style type="text/css" media="screen">
+
+	</style>
+
+
+</head>
+<body>
+
+
+
+
+<div class='container'>
+	<div class='row'>
+		<div class='rol'>
+<!-- 		<span>state</span>
+		<select id='sell'>
+			<option value="Lagos">Lagos</option>
+			<option value="Oyo">Oyo</option>
+			<option value="Abuja">Abuja</option>
+		</select>
+		<p id='text'>THIS IS MY SITE</p>
+		<button id='cnt'>Read Constant</button>
+	
+		<button id='bbb' type="button" class='btn btn-success'>click</button>
+		<button id='lll' type="button" class='btn btn-success'>LOOP</button>
+	<form id='subb'>
+		<div  class='form-group'>
+			<label>email</label>
+			<input id='p' type="text" class='form-control'>
+		</div>
+		<div class='form-group'>
+			<label>password</label>
+			<input id='y'  type="password" class='form-control'>
+		</div>
+		<div>
+			<button id='bbn' type="button" class='btn btn-info'>Login</button>
+		</div>
+	</form>
+
+	
+
+	<button id='but' class='btn btn-info' type="button">Register</button>
+	<h1 id='test'></h1>
+	<h2 class='tes'>No1<h2>
+	<h2 class='tes'>No2<h2>
+	<h2 class='tes'>No3<h2>
+	<h2 class='tes'>No4<h2>
+
+		<img src='images/nice.jpeg' id='dim' width="300" height="200">
+		<button type="button" id='bot' class='btn btn-info'>Dimension</button>
+		</div>
+
+	</div>
+		<div class='form-group'>
+			<label>password</label>
+			<input id='pass'  type="password" class='form-control'> -->
+		<div class='form-group'>
+			<span>This is my first paragraph, please go through and sign in </span>
+			<input type="text" id='test' >
+			<button type="button" class='btn btn-info' id='blot'>check details</button>
+			<button type="button" class='btn btn-success' id='blot1' disabled="disbled">Bill My Account</button>
+		</div>
+		</div>
+
+</div>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/bootstrap.min.js'></script>
+<script type="text/javascript">
+
+// $(document).ready(function(){
+// 	$('#bbb').click(function(){
+// 		alert('Gods Time is the best');
+// 	})
+// 	$('#lll').click(function(){
+// 		for(i=1; i<=10; i++){
+// 			alert(i);
+// 		}
+// 	})
+
+// })
+
+// $(document).ready(function(){
+// 	$('#sell').change(function(){
+// 		var r= $('#sell').val();
+// 		alert(r);
+// 	})
+// });
+
+// $(document).ready(function(){
+// 	$('#cnt').click(function(){
+// 		var constt = $('#text').text();
+// 		alert(constt);
+// 	});
+// });
+
+// $(document).ready(function(){
+	
+// 	$('#bbn').click(function(){
+// 		var s =$('#p').val();
+// 		var f =$('#y').val();
+// 		if(s == ''){
+// 			alert('please put your email');
+// 		}
+// 		else if(f == ''){
+// 			alert('Enter your password');
+// 		}
+// 		else{
+// 			alert('Login in successful')
+// 			$('#subb').submit();
+// 		}
+// 	})
+// });
+
+// $(document).ready(function(){
+// 	$('#test').html('<i>This</i> is my content');
+// });
+
+
+// $(document).ready(function(){
+// 	$('#but').click(function(){
+// 		$('#but').html('Registered Successfully')
+// 	})
+
+// 	var ff = prompt('what is your name');
+// 	$('#test').html('Your name is ' + ff);
+
+// });
+
+// $(document).ready(function(){
+// 	$('.tes').click(function(){
+// 		$(this).html('Text Page');
+// 	})
+// });
+
+// $(document).ready(function(){
+// 	$('#bot').click(function(){
+	
+// 	var dim = $('#dim').attr('width',400);
+// 	var vim = $('#dim').attr('height',500);
+	
+// 	})
+// });
+
+// $(document).ready(function(){
+// 	$('#blot').click(function(){
+// 		$('#pass').attr('type','text');
+// 	})
+// });
+
+$(document).ready(function(){
+	
+	$('#blot').click(function(){
+
+		var ff = $('#test').val();
+		if(ff.trim() == ''){
+			alert('put something');
+		}
+		else{
+			$('#blot1').removeAttr('disabled');
+		}
+	})
+});
+</script>
+</body>
+</html>

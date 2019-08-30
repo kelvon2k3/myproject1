@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link href='css/bootstrap.css' rel='stylesheet'>
+	<style type="text/css" media="screen">
+	
+		#formm{
+			border:1px solid black;
+			width: 200px;
+			height: 450px;
+		}
+
+		#error{
+			color:red;
+		}
+	
+
+	
+	</style>
+	<script type="text/javascript">
+		
+		function on(){
+			document.getElementById('well').innerHTML='*Please enter a Username';
+		}
+
+		function on1(){
+			document.getElementById('well1').innerHTML='*Please enter a password';
+		}
+
+		function on2(){
+			document.getElementById('well2').innerHTML='*Enter same password';
+		}
+
+
+		function signup(){
+			var u1=document.getElementById('user1').value;
+			var p1=document.getElementById('pass1').value;
+			var p2=document.getElementById('pass2').value;
+			
+
+			if ((p1==p2) && (u1!='')){
+				alert('Sign-Up was Successful. Your Username is  ' +  u1);
+			}
+			else if(p1!=p2){
+				document.getElementById('error').innerHTML='*password is incorrect';
+			}
+			else{
+				alert('You have not put a Username');
+			}
+		}
+
+		function showpass(){
+			var shpas=document.getElementById('pass1'&& 'pass2').type;
+			if(shpas=='text'){
+				document.getElementById('pass1' && 'pass2').type='password';
+			}
+			else{
+				document.getElementById('pass1' && 'pass2' ).type='text';
+			}
+		}
+
+
+	</script> 
+
+</head>
+
+
+<body>
+	
+	<div class='container'>
+			
+			<div class='row'>
+				
+				<div class='col' id='formm'>
+					<form action="#" method="post">
+						<div class='form-group'>
+							<label>Username</label>
+							<input type="text" class='form-control' id='user1' onclick="on()">	
+						</div>
+						<span id='well' style='color: green'></span>
+						<div class='form-group'>
+							<label>password</label>
+							<input type="password" class='form-control' id='pass1' onclick="on1()">	
+						</div>
+						<span id='well1' style='color: green'></span>
+						<div class='form-group'>
+							<label>comfirm password</label>
+							<input type="password" class='form-control' id='pass2' onclick="on2()">	
+						</div>
+						<span id='well2' style='color: green'></span><br>
+						<button class="btn btn-info" type="button" onclick="showpass()">Show passord</button>
+						<p></p>
+						<div>
+							<button class="btn btn-success" t ype="button" onclick="signup() ">login</button>
+						</div>
+						<p id='error'> </p>
+					</form>
+			</div>
+	</div>
+</div>
+
+	<script type='text/javascript' src='js/jquery.js'></script>
+	<script type='text/javascript' src='js/popper.js'></script>
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+</body>
+</html>

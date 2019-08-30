@@ -1,0 +1,1 @@
+SELECT custord_amt as amount, custord_date FROM customer_orders

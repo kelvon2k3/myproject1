@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link href='css/bootstrap.css' rel='stylesheet'>
+	<style type="text/css" media="screen">
+
+	</style>
+
+
+</head>
+<body>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type="text/javascript">
+//	$(document).ready(function(){
+//var p1content=$('#p1').html();
+
+//$('#btn-display').click(function(){
+//	$('#p2').html(p1content);
+//});
+
+//$('#btn-hide').click(function(){
+//	$('#p1').hide();
+//})
+	
+//$('#btn-show').click(function(){
+//	$('#p1').show();
+//})
+
+//	});
+
+// $(document).ready(function(){
+// 	$("#btn-alert").click(function(){
+// 		var v = '';
+// 		for (i=0;  i<=10; i++){
+// 		v =  v+i +'<br>';
+// 	}
+// 	document.write(v);
+
+// 	$('#p2').html(v);;
+// 	})
+
+
+// });
+		
+$(document).ready(function(){
+	$('#cntry').on('change',function(){
+		var cntry= $('#cntry').val();
+
+		if(cntry==1){
+			$('#state').show()
+		}
+		else{
+			$('#state').hide();
+		}
+	})
+
+	$('#age').on('blur',function(){
+		var age =$('#age').val();
+		if(age< 18){
+			$('#pp').html( ($('#namm').val()) + '  Dont you know you are too young for this?');
+		}
+		else{
+			$('#pp').html(($('#namm').val()) + '  Dont you know you are too old for this?');
+		}
+	})
+})
+
+</script>
+
+
+
+<div class='container'>
+	<div class='row'>
+		<div class='col'>
+			<!-- <p id='p1'>This is the first paragraph</p> -->
+		<form action="#" method="post">
+						<div class='form-group'>
+							<label>Name</label>
+							<input type="text" class='form-control' id='namm'>	
+						</div>
+						<div class='form-group'>
+							<label>email</label>
+							<input type="text" class='form-control'>	
+						</div>
+						<div class='form-group'>
+							<span>Nationality</span>
+						<select id='cntry'>
+							<option value="1">Nigerian</option>
+							<option value="2">Non-Nigerian</option>
+						</select>
+					</div>
+						<div class='form-group' id='state'>
+							<span>State</span>
+						<select >
+							<option>Lagos</option>
+							<option>Other States</option>
+						</select>
+					</div>
+					<div>
+						<label>Age</label>
+						<input type="text" class='form-control' id='age'>
+						<p style='color: red' id='pp'></p>
+					</div>
+						<div>
+							<button class="btn btn-success">Submit</button>
+						</div>
+
+					</form>
+				</div>
+				
+		<div class='col'>
+		<!-- 	<p id='p2'></p> -->
+		</div>
+		
+
+	</div>
+	
+	
+<!-- 		<button class="btn btn-success" id='btn-display'>display</button> 
+		<button class="btn btn-warning" id='btn-hide'>hide</button>  
+		<button class="btn btn-primary" id='btn-show'>show</button>
+		<button class="btn btn-dark" id='btn-alert'>alert</button>
+ -->
+
+
+
+
+
+</div>
+	
+	
+		
+	
+	<script type='text/javascript' src='js/bootstrap.min.js'></script>
+</body>
+</html>
